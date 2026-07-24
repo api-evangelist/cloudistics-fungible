@@ -1,8 +1,28 @@
 aid: cloudistics-fungible
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cloudistics-fungible.png
 name: Cloudistics (Fungible)
-description: 'Cloudistics (Fungible) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-infrastructure. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Cloudistics was a composable, hyperconverged cloud infrastructure software
+  company whose platform managed applications, virtual machines, storage, and networking
+  across on-premises datacenters via a REST API and an official Python client (with the
+  ccli command-line tool). Fungible acquired the Cloudistics software team and assets in
+  September 2020 to build DPU-powered hyperdisaggregated infrastructure, and Microsoft
+  acquired Fungible in January 2023 to bolster Azure datacenter networking and storage.
+  As independent companies both are now defunct: the primary product domains are parked,
+  the public GitHub organization has been emptied, and the PyPI package has been removed.
+  The one surviving public developer surface is the read-only Cloudistics API Python
+  Client documentation hosted on Read the Docs. This profile is retained as a historical
+  API Evangelist network record.'
 url: https://raw.githubusercontent.com/api-evangelist/cloudistics-fungible/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +30,47 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquisition:
+- acquirer: Fungible
+  date: '2020-09'
+  detail: Fungible acquired Cloudistics software team and assets.
+- acquirer: Microsoft
+  date: '2023-01'
+  detail: Microsoft acquired Fungible (~$190M) to strengthen Azure datacenter infrastructure.
+x-enrichment:
+  generated: '2026-07-18'
+  method: searched
+  findings: 'No live API surface. apis.io enrichment probes: fungible.com + cloudistics.com
+    parked (DNS resolves, TLS mismatch); github.com/Cloudistics org live but 0 public
+    repos (cloudistics-python and REST-API repos removed, HTTP 404); PyPI cloudistics
+    package removed (HTTP 404); support.cloudistics.com DNS does not resolve. Only live
+    surface: cloudistics-python.readthedocs.io (HTTP 200) and the GitHub org page (HTTP
+    200). No OpenAPI/AsyncAPI/GraphQL spec recoverable, so all derive/generate artifacts
+    were skipped per the no-fabrication rule.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai Infrastructure
+- Composable Infrastructure
+- Hyperconverged Infrastructure
+- Data Center
+- Cloud Computing
+- Data Processing Unit
+- Acquired
 apis: []
+common:
+- type: Documentation
+  url: https://cloudistics-python.readthedocs.io/en/latest/
+  name: Cloudistics API Python Client documentation (Read the Docs)
+- type: APIReference
+  url: https://cloudistics-python.readthedocs.io/en/latest/
+  name: Cloudistics REST API Python client reference
+- type: GitHubOrganization
+  url: https://github.com/Cloudistics
+  name: Cloudistics GitHub organization (public repos removed)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
