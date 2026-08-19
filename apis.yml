@@ -48,7 +48,7 @@ x-enrichment:
     surface: cloudistics-python.readthedocs.io (HTTP 200) and the GitHub org page (HTTP
     200). No OpenAPI/AsyncAPI/GraphQL spec recoverable, so all derive/generate artifacts
     were skipped per the no-fabrication rule.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
