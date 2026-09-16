@@ -58,7 +58,7 @@ x-enrichment:
     were skipped per the no-fabrication rule.'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-09-15'
+modified: '2026-09-16'
 tags:
 - Company
 - AI Infrastructure
@@ -68,6 +68,7 @@ tags:
 - Cloud Computing
 - Data Processing Unit
 - Acquired
+- Defunct
 tags_raw:
 - Company
 - Ai Infrastructure
@@ -77,6 +78,7 @@ tags_raw:
 - Cloud Computing
 - Data Processing Unit
 - Acquired
+- Defunct
 apis: []
 common:
 - type: Documentation
