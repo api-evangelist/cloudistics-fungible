@@ -47,6 +47,9 @@ x-acquisition:
 - acquirer: Microsoft
   date: 2023-01
   detail: Microsoft acquired Fungible (~$190M) to strengthen Azure datacenter infrastructure.
+x-docs-platform: sphinx
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-24
 x-enrichment:
   generated: '2026-07-18'
   method: searched
@@ -64,7 +67,7 @@ tags:
 - AI Infrastructure
 - Composable Infrastructure
 - Hyperconverged Infrastructure
-- Data-Center
+- Data Center
 - Cloud Computing
 - Data Processing Unit
 - Acquired
@@ -79,6 +82,7 @@ tags_raw:
 - Data Processing Unit
 - Acquired
 - Defunct
+- Data-Center
 apis: []
 common:
 - type: Documentation
@@ -95,3 +99,4 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-acquired-by: fungible
